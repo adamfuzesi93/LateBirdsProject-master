@@ -1,0 +1,25 @@
+.anchor {
+    -fx-background-image:url('backgrnd.png');
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 1920 1080;
+}
+#rentPage {
+    -fx-background-image: url('motocrossKTM.jpg');
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 1050 1050;
+    -fx-background-color: black;
+}
+
+#buyPage{
+    -fx-background-image: url('via.png');
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 1050 1050;
+    -fx-background-color: black;
+}
+
+#swissTextBox {
+    color: red;
+}
