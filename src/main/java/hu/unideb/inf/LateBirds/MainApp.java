@@ -15,6 +15,7 @@ public class MainApp extends Application {
         Scene scene = new Scene(loader.load());
         stage.setTitle("LateBirds");
         stage.setScene(scene);
+        stage.setFullScreen(true);
         stage.show();
     }
     /**
@@ -29,4 +30,4 @@ public class MainApp extends Application {
         launch(args);
     }
 
-}
+    }
