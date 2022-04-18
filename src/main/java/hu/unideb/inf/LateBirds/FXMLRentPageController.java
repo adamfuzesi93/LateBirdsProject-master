@@ -1,5 +1,6 @@
 package hu.unideb.inf.LateBirds;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -8,11 +9,15 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
-import java.awt.event.ActionEvent;
 import java.io.IOException;
 
-public class FXMLSecondPageController {
-   /* @FXML
+
+public class FXMLRentPageController {
+    public void secondPageBackButtonPressed(ActionEvent actionEvent) {
+
+    }
+
+    @FXML
     private ComboBox<?> AdventurePark;
 
     @FXML
@@ -35,13 +40,13 @@ public class FXMLSecondPageController {
 
     @FXML
     void logoutButtonPressed(ActionEvent event) throws IOException {
-        //Stage stage = (Stage) logoutButton.getScene().getWindow();
+        Stage stage = (Stage) logoutButton.getScene().getWindow();
         FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/fxml/FXMLLateBirds.fxml"));
         Scene scene = new Scene(loader.load());
         stage.setTitle("LateBirds");
         stage.setScene(scene);
         stage.setFullScreen(true);
         stage.show();
-    }*/
+    }
 
 }

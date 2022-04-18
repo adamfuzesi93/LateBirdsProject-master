@@ -1,11 +1,11 @@
-.anchor {
-    -fx-background-image:url('backgrnd.png');
-    -fx-background-position: center center;
+#LateBirdsMainPage {
+    -fx-background-image:url('Images/backgrnd.png');
+    -fx-background-position: center;
     -fx-background-repeat: no-repeat;
     -fx-background-size: 1920 1080;
 }
 #rentPage {
-    -fx-background-image: url('motocrossKTM.jpg');
+    -fx-background-image: url('Images/motocrossKTM.jpg');
     -fx-background-position: center center;
     -fx-background-repeat: no-repeat;
     -fx-background-size: 1050 1050;
@@ -13,7 +13,7 @@
 }
 
 #buyPage{
-    -fx-background-image: url('via.png');
+    -fx-background-image: url('Images/via.png');
     -fx-background-position: center center;
     -fx-background-repeat: no-repeat;
     -fx-background-size: 1050 1050;
