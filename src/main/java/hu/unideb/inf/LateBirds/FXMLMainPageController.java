@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
+import java.awt.event.MouseEvent;
 import java.io.IOException;
 
 public class FXMLMainPageController {
@@ -21,9 +22,24 @@ public class FXMLMainPageController {
     private Button register;
 
     @FXML
+    private Button loginAsAdmin;
+
+    @FXML
     private TextField username;
 
     public FXMLMainPageController() {
+    }
+
+    @FXML
+    void loginAsAdministrator(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/fxml/FXMLAdmin.fxml"));
+        Scene scene = new Scene(loader.load());
+        //scene.setCursor(Cursor.WAIT);
+        Stage stage = (Stage) register.getScene().getWindow();
+        //stage.setTitle("LateBirds");
+        stage.setScene(scene);
+        stage.setFullScreen(true);
+        stage.show();
     }
 
     @FXML

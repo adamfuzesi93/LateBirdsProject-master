@@ -51,6 +51,11 @@
                               <Image url="@Images/password.png" />
                            </image>
                         </ImageView>
+            <Button fx:id="loginAsAdmin" layoutX="199.0" layoutY="504.0" mnemonicParsing="false" onAction="#loginAsAdministrator" prefHeight="30.0" prefWidth="100.0" text="Login as admin">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
                      </children>
          <padding>
             <Insets left="200.0" right="200.0" top="30.0" />
