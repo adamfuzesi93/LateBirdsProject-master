@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
@@ -13,12 +14,13 @@ import java.io.IOException;
 
 public class FXMLAdminController {
 
+    private static Admin activeAdmin;
 
     @FXML
     private GridPane AdminPage;
 
     @FXML
-    private TextField adminName;
+    private Label adminName;
 
     @FXML
     private Button deleteButton;
@@ -35,10 +37,12 @@ public class FXMLAdminController {
         Stage stage = (Stage) backToMain.getScene().getWindow();
         //stage.setTitle("LateBirds");
         stage.setScene(scene);
-        stage.setFullScreen(true);
         stage.show();
 
     }
+    /*public static void getActiveAdmin(Admin admin) {
+        activeAdmin = admin;
+    }*/
 
     public void deleteButtonPushed(ActionEvent actionEvent) {
     }

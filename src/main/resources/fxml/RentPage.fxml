@@ -126,7 +126,7 @@
             </Button>
         </VBox>
         <VBox prefHeight="200.0" prefWidth="500.0">
-            <TextArea editable="false" mouseTransparent="true" opacity="0.7" prefHeight="628.0" prefWidth="350.0" text="sadas" wrapText="true">
+            <TextArea editable="false" mouseTransparent="true" opacity="0.7" prefHeight="628.0" prefWidth="350.0" wrapText="true">
                 <font>
                     <Font name="Comic Sans MS" size="28.0" />
                 </font>
@@ -140,7 +140,7 @@
                     <Insets bottom="10.0" top="30.0" />
                 </VBox.margin>
             </TextArea>
-            <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="150.0" style="-fx-background-color: white;" text="Checkout">
+            <Button fx:id="checkoutButton" mnemonicParsing="false" onAction="#checkoutButtonPressed" prefHeight="55.0" prefWidth="150.0" style="-fx-background-color: white;" text="Checkout">
                 <font>
                     <Font name="Comic Sans MS" size="24.0" />
                 </font>

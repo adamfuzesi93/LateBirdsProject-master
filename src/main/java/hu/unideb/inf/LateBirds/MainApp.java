@@ -5,6 +5,9 @@ import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.h2.tools.Server;
+
+import java.sql.SQLException;
 
 
 public class MainApp extends Application {
@@ -15,7 +18,6 @@ public class MainApp extends Application {
         Scene scene = new Scene(loader.load());
         stage.setTitle("LateBirds");
         stage.setScene(scene);
-        stage.setFullScreen(true);
         stage.show();
     }
     /**
@@ -26,8 +28,30 @@ public class MainApp extends Application {
      *
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+
+        startDatabase();
+
+        /////////////   AdatBázis Info ////////////////////////////////////////
+
+        System.out.println("Open your browser and navigate to http://localhost:8082/");
+        System.out.println("JDBC URL: jdbc:h2:file:./src\\main\\resources\\mydb");
+        System.out.println("User Name: sa");
+        System.out.println("Password: ");
+        ////////////////  JAVAFX    ///////////////////////////////////////
         launch(args);
+        stopDatabase();
+
+    }
+
+    private static Server s = new Server();
+
+    private static void startDatabase() throws SQLException {
+        s.runTool("-tcp", "-web", "-ifNotExists");
+    }
+
+    public static void stopDatabase()  {
+        s.shutdown();
     }
 
     }

@@ -53,7 +53,6 @@ public class FXMLRegisterPageController {
         Stage stage = (Stage) backButton.getScene().getWindow();
         //stage.setTitle("LateBirds");
         stage.setScene(scene);
-        stage.setFullScreen(true);
         stage.show();
     }
 
